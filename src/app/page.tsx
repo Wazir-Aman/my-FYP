@@ -47,8 +47,7 @@ export default function LandingPage() {
                     Smart Greenhouse Automation
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Monitor and control your greenhouse environment with precision. Optimize growth conditions
-                    automatically.
+                    {"Monitor and control your greenhouse environment with precision. Optimize growth conditions automatically."}
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -87,7 +86,7 @@ export default function LandingPage() {
                   Choose Your Access Level
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Whether you're exploring our system or managing your greenhouse, we have the right interface for you.
+                  {"Whether you're exploring our system or managing your greenhouse, we have the right interface for you."}
                 </p>
               </div>
             </div>
@@ -152,7 +151,7 @@ export default function LandingPage() {
                       alt="Admin Dashboard Preview"
                       className="rounded-lg object-cover mt-4"
                     />
-                  </div>
+                  </div> 
                 </CardContent>
                 <CardFooter>
                   <Link href="/admin/login" className="w-full">
@@ -170,7 +169,7 @@ export default function LandingPage() {
         <div className="container flex flex-col gap-4 py-10 md:flex-row md:items-center md:justify-between md:py-8">
           <div className="flex items-center gap-2">
             <Leaf className="h-5 w-5 text-green-600" />
-            <p className="text-sm text-white text-muted-foreground">© 2025 AutoGreenHouse. All rights reserved.</p>
+            <p className="text-sm text-white text-muted-foreground">{"© 2025 AutoGreenHouse. All rights reserved."}</p>
           </div>
           <nav className="flex gap-4 text-sm text-white text-muted-foreground">
             <Link href="#" className="hover:underline">

@@ -38,7 +38,7 @@ export default function AdminLogin() {
       setTimeout(() => {
         router.push("/admin/dashboard");
       }, 1000);
-    } catch (error: any) {
+    } catch {
       toast({
         title: "Login failed",
         description: "Invalid email or password. Please try again.",

@@ -52,7 +52,7 @@ export default function CustomerPortal() {
               </Link>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Customer Portal</h1>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Explore our greenhouse automation system and see real-time sensor data.
+                {"Explore our greenhouse automation system and see real-time sensor data."}
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-3xl font-bold">24.5°C</div>
-                      <p className="text-xs text-muted-foreground">Optimal range: 22-26°C</p>
+                      <p className="text-xs text-muted-foreground">{"Optimal range: 22-26°C"}</p>
                     </CardContent>
                   </Card>
                   <Card>
@@ -85,7 +85,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-3xl font-bold">65%</div>
-                      <p className="text-xs text-muted-foreground">Optimal range: 60-70%</p>
+                      <p className="text-xs text-muted-foreground">{"Optimal range: 60-70%"}</p>
                     </CardContent>
                   </Card>
                   <Card>
@@ -97,7 +97,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-3xl font-bold">42%</div>
-                      <p className="text-xs text-muted-foreground">Optimal range: 40-60%</p>
+                      <p className="text-xs text-muted-foreground">{"Optimal range: 40-60%"}</p>
                     </CardContent>
                   </Card>
                   <Card>
@@ -109,7 +109,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-xl font-medium text-green-600">Optimal</div>
-                      <p className="text-xs text-muted-foreground">All systems functioning normally</p>
+                      <p className="text-xs text-muted-foreground">{"All systems functioning normally"}</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -121,7 +121,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <div className="h-[200px] w-full bg-muted/30 rounded-md flex items-center justify-center">
-                        <p className="text-muted-foreground">Chart visualization would appear here</p>
+                        <p className="text-muted-foreground">{"Chart visualization would appear here"}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -139,7 +139,7 @@ export default function CustomerPortal() {
                   </TabsList>
                   <TabsContent value="sensors" className="p-4 border rounded-md mt-2">
                     <h3 className="text-lg font-medium mb-2">Advanced Sensor Network</h3>
-                    <p className="mb-4">Our system uses high-precision sensors to monitor:</p>
+                    <p className="mb-4">{"Our system uses high-precision sensors to monitor:"}</p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start gap-2">
                         <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -164,7 +164,7 @@ export default function CustomerPortal() {
                   </TabsContent>
                   <TabsContent value="automation" className="p-4 border rounded-md mt-2">
                     <h3 className="text-lg font-medium mb-2">Smart Automation</h3>
-                    <p className="mb-4">Our AI-driven system automatically adjusts:</p>
+                    <p className="mb-4">{"Our AI-driven system automatically adjusts:"}</p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start gap-2">
                         <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -189,7 +189,7 @@ export default function CustomerPortal() {
                   </TabsContent>
                   <TabsContent value="control" className="p-4 border rounded-md mt-2">
                     <h3 className="text-lg font-medium mb-2">Remote Control</h3>
-                    <p className="mb-4">As an admin, you'll have full control over:</p>
+                    <p className="mb-4">{"As an admin, you'll have full control over:"}</p>
                     <ul className="space-y-2 mb-4">
                       <li className="flex items-start gap-2">
                         <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -222,7 +222,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <p className="mb-4">
-                        Experience a fully interactive demo of our admin dashboard with simulated data.
+                        {"Experience a fully interactive demo of our admin dashboard with simulated data."}
                       </p>
                       <Link href="/customer/demo">
                         <Button className="cursor-pointer w-full bg-green-600 hover:bg-green-700">
@@ -242,7 +242,7 @@ export default function CustomerPortal() {
                     </CardHeader>
                     <CardContent>
                       <p className="mb-4">
-                        Our complete system includes all hardware, software, and a 1-year warranty.
+                        {"Our complete system includes all hardware, software, and a 1-year warranty."}
                       </p>
                       <div className="flex flex-col gap-4 sm:flex-row">
                         <Button className="cursor-pointer bg-green-600 hover:bg-green-700">Purchase Now</Button>
@@ -260,7 +260,7 @@ export default function CustomerPortal() {
         <div className="container flex flex-col gap-4 py-10 md:flex-row md:items-center md:justify-between md:py-8">
           <div className="flex items-center gap-2">
             <Leaf className="h-5 w-5 text-green-600" />
-            <p className="text-sm text-white text-muted-foreground">© 2025 AutoGreenHouse. All rights reserved.</p>
+            <p className="text-sm text-white text-muted-foreground">{"© 2025 AutoGreenHouse. All rights reserved."}</p>
           </div>
           <nav className="flex gap-4 text-sm text-white text-muted-foregroun">
             <Link href="#" className="hover:underline">
