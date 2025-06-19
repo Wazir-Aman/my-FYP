@@ -63,7 +63,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
   const { isOpen, isMobile } = useSidebar()
 
   if (isMobile) {
-    return <MobileSidebar>{children}</MobileSidebar>
+    return null;
   }
 
   return (

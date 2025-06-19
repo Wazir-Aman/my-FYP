@@ -176,7 +176,7 @@ export default function LandingPage() {
         </section>
       </main>
       <footer className="border-t bg-black">
-        <div className="container flex flex-col gap-4 py-10 md:flex-row md:items-center md:justify-between md:py-8">
+        <div className="container flex flex-col gap-4 py-10 px-2 md:flex-row md:items-center md:justify-between md:py-8">
           <div className="flex items-center gap-2">
             <Leaf className="h-5 w-5 text-green-600" />
             <p className="text-sm text-white text-muted-foreground">{"© 2025 AutoGreenHouse. All rights reserved."}</p>

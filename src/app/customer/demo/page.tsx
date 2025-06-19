@@ -13,7 +13,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 export default function CustomerDemo() {
   const [mounted, setMounted] = useState(false)
 
-  // Mock sensor data
+  // Mock sensor data 
   const [temperature, setTemperature] = useState(24.5)
   const [humidity, setHumidity] = useState(65)
   const [soilMoisture, setSoilMoisture] = useState(42)
@@ -44,28 +44,47 @@ export default function CustomerDemo() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-green-400 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            
+      <header className="fixed top-0 z-50 w-full border-b bg-green-400 backdrop-blur">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+
+          {/* Logo and Brand */}
+          <div className="flex items-center gap-2 max-w-[70%]">
             <Image
               src="/logo.png"
               alt="AutoGreenHouse Logo"
-              width={120}
-              height={40}
+              width={100}
+              height={30}
+              className="object-contain"
             />
-            <span className="text-xl font-bold">AutoGreenHouse</span>
+            <span className="text-lg font-bold truncate">AutoGreenHouse</span>
           </div>
+
+          {/* Back Button */}
           <Link href="/customer">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-sm px-2 py-1 hidden sm:flex items-center"
+            >
+              <ArrowLeft className="mr-1 h-4 w-4" />
               Back to Customer Portal
+            </Button>
+
+            {/* Icon-only button for mobile */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="sm:hidden"
+              aria-label="Back"
+            >
+              <ArrowLeft className="h-4 w-4" />
             </Button>
           </Link>
         </div>
       </header>
 
-      <main className="flex-1 container py-6">
+
+      <main className="flex-1 container py-6 pt-16">
         <div className="mb-6">
           <h1 className="text-3xl font-bold mb-2">Admin Dashboard Demo</h1>
           <p className="text-muted-foreground">
@@ -267,22 +286,25 @@ export default function CustomerDemo() {
           </Card>
         </div>
 
-        <div className="mt-6 flex justify-between">
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-between">
           <Link href="/customer">
-            <Button variant="outline">
+            <Button variant="outline" className="w-full cursor-pointer hover:bg-gray-200 sm:w-auto">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Customer Portal
             </Button>
           </Link>
           <Link href="/">
-            <Button className="bg-green-600 hover:bg-green-700">Learn More About Purchasing</Button>
+            <Button className="w-full sm:w-auto bg-green-600 cursor-pointer hover:bg-green-700">
+              Learn More About Purchasing
+            </Button>
           </Link>
         </div>
+
       </main>
 
       <footer className="border-t bg-black">
         <div className="container flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center px-2 gap-2">
             <Leaf className="h-5 w-5 text-green-600" />
             <p className="text-sm text-white text-muted-foreground">© 2025 AutoGreenHouse. All rights reserved.</p>
           </div>
