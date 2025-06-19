@@ -1,42 +1,56 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Leaf, Lock, LineChart } from "lucide-react"
-
+import { ArrowRight, Leaf, Lock, LineChart, Menu, X } from "lucide-react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function LandingPage() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-green-400 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/logo.png"
-              alt="AutoGreenHouse Logo"
-              width={120}
-              height={40}
-            />
-            <span className="text-xl font-bold">AutoGreenHouse</span>
-          </div>
-          <nav className="flex items-center gap-4">
-            <Link href="/customer" className="text-sm font-medium hover:underline">
-              Features
-            </Link>
-            <Link href="/customer" className="text-sm font-medium hover:underline">
-              How It Works
-            </Link>
-            <Link href="/customer" className="text-sm font-medium hover:underline">
-              Demo
-            </Link>
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        {/* Logo & Title */}
+        <div className="flex items-center gap-2">
+          <Image src="/logo.png" alt="AutoGreenHouse Logo" width={120} height={40} />
+          <span className="text-xl font-bold">AutoGreenHouse</span>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-4">
+          <Link href="/customer" className="text-sm font-medium hover:underline">Features</Link>
+          <Link href="/customer" className="text-sm font-medium hover:underline">How It Works</Link>
+          <Link href="/customer" className="text-sm font-medium hover:underline">Demo</Link>
+          <Link href="/admin/login">
+            <button className="cursor-pointer hover:bg-gray-200 border px-3 py-1 rounded text-sm">Admin Login</button>
+          </Link>
+        </nav>
+
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="md:hidden bg-green-300 border-t">
+          <nav className="flex flex-col p-4 gap-2">
+            <Link href="/customer" className="text-sm font-medium hover:underline">Features</Link>
+            <Link href="/customer" className="text-sm font-medium hover:underline">How It Works</Link>
+            <Link href="/customer" className="text-sm font-medium hover:underline">Demo</Link>
             <Link href="/admin/login">
-              <Button className="cursor-pointer hover:bg-gray-200" variant="outline" size="sm">
-                Admin Login
-              </Button>
+              <button className="cursor-pointer hover:bg-gray-200 border px-3 py-1 rounded text-sm w-full text-left">Admin Login</button>
             </Link>
           </nav>
         </div>
-      </header>
+      )}
+    </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-green-50 to-white dark:from-green-950/20 dark:to-background">
           <div className="container px-4 md:px-6">
