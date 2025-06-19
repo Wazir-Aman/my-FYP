@@ -79,17 +79,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
 }
 
 // Mobile sidebar using Sheet
-function MobileSidebar({ children }: { children: React.ReactNode }) {
-  const { isOpen, toggle } = useSidebar()
 
-  return (
-    <Sheet open={isOpen} onOpenChange={toggle}>
-      <SheetContent side="left" className="p-0 w-64">
-        <div className="flex h-full flex-col overflow-y-auto">{children}</div>
-      </SheetContent>
-    </Sheet>
-  )
-}
 
 // Sidebar header
 export function SidebarHeader({ children }: { children: React.ReactNode }) {
