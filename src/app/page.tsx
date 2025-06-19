@@ -28,16 +28,12 @@ export default function LandingPage() {
             <button className="cursor-pointer hover:bg-gray-200 border px-3 py-1 rounded text-sm">Admin Login</button>
           </Link>
         </nav>
-
-        {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden bg-green-300 border-t">
           <nav className="flex flex-col p-4 gap-2">

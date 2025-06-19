@@ -83,7 +83,7 @@ export default function CustomerPortal() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">24.5°C</div>
-              <p className="text-xs text-muted-foreground">Optimal range: 22-26°C</p>
+              <p className="text-xs text-muted-foreground">{"Optimal range: 22-26°C"}</p>
             </CardContent>
           </Card>
           <Card>
@@ -95,7 +95,7 @@ export default function CustomerPortal() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">65%</div>
-              <p className="text-xs text-muted-foreground">Optimal range: 60-70%</p>
+              <p className="text-xs text-muted-foreground">{"Optimal range: 60-70%"}</p>
             </CardContent>
           </Card>
           <Card>
@@ -107,7 +107,7 @@ export default function CustomerPortal() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">42%</div>
-              <p className="text-xs text-muted-foreground">Optimal range: 40-60%</p>
+              <p className="text-xs text-muted-foreground">{"Optimal range: 40-60%"}</p>
             </CardContent>
           </Card>
           <Card>
@@ -119,7 +119,7 @@ export default function CustomerPortal() {
             </CardHeader>
             <CardContent>
               <div className="text-xl font-medium text-green-600">Optimal</div>
-              <p className="text-xs text-muted-foreground">All systems functioning normally</p>
+              <p className="text-xs text-muted-foreground">{"All systems functioning normally"}</p>
             </CardContent>
           </Card>
         </div>
@@ -132,7 +132,7 @@ export default function CustomerPortal() {
             </CardHeader>
             <CardContent>
               <div className="h-[200px] w-full bg-muted/30 rounded-md flex items-center justify-center">
-                <p className="text-muted-foreground">Chart visualization would appear here</p>
+                <p className="text-muted-foreground">{"Chart visualization would appear here"}</p>
               </div>
             </CardContent>
           </Card>
@@ -151,7 +151,7 @@ export default function CustomerPortal() {
 
           <TabsContent value="sensors" className="p-4 border rounded-md mt-2">
             <h3 className="text-lg font-medium mb-2">Advanced Sensor Network</h3>
-            <p className="mb-4">Our system uses high-precision sensors to monitor:</p>
+            <p className="mb-4">{"Our system uses high-precision sensors to monitor:"}</p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-2">
                 <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -177,7 +177,7 @@ export default function CustomerPortal() {
 
           <TabsContent value="automation" className="p-4 border rounded-md mt-2">
             <h3 className="text-lg font-medium mb-2">Smart Automation</h3>
-            <p className="mb-4">Our AI-driven system automatically adjusts:</p>
+            <p className="mb-4">{"Our AI-driven system automatically adjusts:"}</p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-2">
                 <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -203,7 +203,7 @@ export default function CustomerPortal() {
 
           <TabsContent value="control" className="p-4 border rounded-md mt-2">
             <h3 className="text-lg font-medium mb-2">Remote Control</h3>
-            <p className="mb-4">As an admin, you'll have full control over:</p>
+            <p className="mb-4">{"As an admin, you'll have full control over:"}</p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-2">
                 <Thermometer className="h-5 w-5 text-green-600 mt-0.5" />
@@ -235,7 +235,7 @@ export default function CustomerPortal() {
               <CardDescription>Try our simulation to see how the admin dashboard works</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">Experience a fully interactive demo of our admin dashboard with simulated data.</p>
+              <p className="mb-4">{"Experience a fully interactive demo of our admin dashboard with simulated data."}</p>
               <Link href="/customer/demo">
                 <Button className="cursor-pointer w-full bg-green-600 hover:bg-green-700">
                   Launch Demo
@@ -253,7 +253,7 @@ export default function CustomerPortal() {
               <CardDescription>Purchase your AutoGreenHouse system today by contacting our sales team.</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">Our complete system includes all hardware, software, and a 1-year warranty.</p>
+              <p className="mb-4">{"Our complete system includes all hardware, software, and a 1-year warranty."}</p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button className="cursor-pointer bg-green-600 hover:bg-green-700">Purchase Now</Button>
                 <Button className="cursor-pointer hover:bg-gray-200" variant="outline">Contact Sales</Button>
